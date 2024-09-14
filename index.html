@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Carlos Daniel Ibañez Villamizar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffe6f2;
+            color: #4d004d;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ff99cc;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            font-family: 'Lobster', cursive;
+            color: white;
+        }
+
+        nav {
+            text-align: center;
+            padding: 10px;
+            background-color: #ffb3d9;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #660033;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .profile-section, .friends-section, .song-section, .like-section {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .profile-section img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        .profile-section h2, .friends-section h2, .song-section h2, .like-section h2 {
+            color: #cc0066;
+            margin-bottom: 10px;
+            font-family: 'Lobster', cursive;
+        }
+
+        .data {
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            margin: 15px 0;
+        }
+
+        .fun-facts {
+            margin-top: 20px;
+            list-style: none;
+            padding: 0;
+            font-size: 18px;
+        }
+
+        .fun-facts li {
+            margin: 10px 0;
+            color: #800040;
+        }
+
+        .friends-section img {
+            border-radius: 10px;
+            width: 300px;
+            height: 300px;
+            margin-bottom: 10px;
+        }
+
+        .song-section {
+            text-align: left;
+            display: flex;
+            align-items: center;
+        }
+
+        .song-section img {
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+        }
+
+        .song-info {
+            display: inline-block;
+        }
+
+        .song-info h3 {
+            margin: 0;
+            font-size: 18px;
+            font-family: 'Lobster', cursive;
+            color: #cc0066;
+        }
+
+        .song-info p {
+            margin: 0;
+            font-size: 16px;
+            color: #800040;
+        }
+
+        .like-section button {
+            background-color: #ff66a3;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .like-section button:hover {
+            background-color: #ff3385;
+        }
+
+        .friends-section button {
+            background-color: #ff66a3;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .friends-section button:hover {
+            background-color: #ff3385;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Perfil de Carlos Daniel Ibañez Villamizar
+    </header>
+
+    <nav>
+        <a href="#profile">Perfil</a>
+        <a href="#fun-facts">Datos Curiosos</a>
+        <a href="#friends">Amigos</a>
+        <a href="#song">Canción Favorita</a>
+        <a href="#like">Me Gusta</a>
+    </nav>
+
+    <div class="container">
+        <!-- Perfil -->
+        <section id="profile" class="profile-section">
+            <img src="foto1.jpeg" alt="Foto de perfil">
+            <h2>Datos Personales</h2>
+            <p class="data">Nombre: Carlos Daniel Ibañez Villamizar</p>
+            <p class="data">Edad: 19</p>
+            <p class="data">Ocupación: Estudiante</p>
+            <p class="data">Lugar de Nacimiento: Barrancabermeja</p>
+            <p class="data">Fecha de Nacimiento: 27 de Abril del 2005</p>
+            <p class="data">Signo Zodiacal: Tauro</p>
+        </section>
+
+        <!-- Datos Curiosos -->
+        <section id="fun-facts" class="profile-section">
+            <h2>Datos Curiosos Sobre Mí</h2>
+            <ul class="fun-facts">
+                <li>Mi familia consta de mi papá y mi hermana.</li>
+                <li>Me gradué de un colegio técnico industrial.</li>
+                <li>Mi comida favorita son los macarrones con queso.</li>
+                <li>Hablo fluidamente el idioma inglés.</li>
+                <li>Me gustaria aprender el idioma portugués.</li>
+                <li>Mi frase de vida es: "Cada cosa que pierdes es un paso que das."</li>
+                <li>No tengo mascotas.</li>
+            </ul>
+        </section>
+
+        <!-- Amigos con cambio de imagen -->
+        <section id="friends" class="friends-section">
+            <h2>Mis Amigos</h2>
+            <img id="friendPhoto" src="foto2.jpeg" alt="Amigo 1">
+            <button id="nextFriend">Siguiente Amigo</button>
+        </section>
+
+        <!-- Canción Favorita -->
+        <section id="song" class="song-section">
+            <img src="foto4.png" alt="Foto del álbum">
+            <div class="song-info">
+                <h3>the last great american dynasty</h3>
+                <p>Taylor Swift</p>
+            </div>
+        </section>
+
+        <!-- Me Gusta -->
+        <section id="like" class="like-section">
+            <h2>¿Te Gusta mi Perfil?</h2>
+            <button id="likeButton">❤️ Me Gusta</button>
+        </section>
+    </div>
+
+    <script>
+        const likeButton = document.getElementById('likeButton');
+        likeButton.addEventListener('click', () => {
+            alert('¡Gracias!');
+        });
+
+        // Cambiar foto de amigos
+        const friendPhoto = document.getElementById('friendPhoto');
+        const nextFriendButton = document.getElementById('nextFriend');
+        const friends = ['foto2.jpeg', 'foto3.jpeg', 'foto5.png'];
+        let currentFriendIndex = 0;
+
+        nextFriendButton.addEventListener('click', () => {
+            currentFriendIndex = (currentFriendIndex + 1) % friends.length;
+            friendPhoto.src = friends[currentFriendIndex];
+        });
+    </script>
+</body>
+</html>
